@@ -40,3 +40,28 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
+footer {
+  border-top: 3px solid #ffffff55;
+
+}
+#busca {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+#busca {
+  display: block;
+  margin: 20px auto;
+}
+.search{
+  text-align: center;
+}
+#busca {
+  background-color: #ffffff;
+}
