@@ -1,5 +1,5 @@
 body{
- background-color: #fff3e0;
+    background-color: #f8c7ce;  
 }
 
 .conteiner{
@@ -7,7 +7,13 @@ body{
     margin: auto;
     padding: 20px;
 }
-.img_bolo{
+.info {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.img_macarrao{
     width: 100%;
     max-width: 300px;
     object-fit: cover;
@@ -16,32 +22,24 @@ body{
 h2{
     margin-top: 15px;
 }
-.info{
-    display: flex;
-    gap: 15px;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
 .card{
     flex: 1;
-    background: #ff7043;
+    background: #fff8f0;
     padding: 20px;
     border-radius: 12px;
 }
 ul, ol{
     padding-left: 20px;
 }
-header {
-  background-color: #ff7043;
-  color: white;
-  text-align: center;
+header{
+    background-color: #ff7043;
+    color: #d32f2f  ;
+    text-align: center;
     padding: 20px;
 }
-.card {
-  background: wheat;
+.card{
+    background: wheat;
 }
-
 a{
     display:inline-block;
     margin-top:15px;
