@@ -1,0 +1,53 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: #fff3e0;
+}
+header{
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}
+.receitas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+#busca {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+#busca{
+  display: block;
+  margin: 20px auto;
+}
+.search{
+  text-align: center;
+}
+#busca{
+  background-color: #ffffff;
+}
+a{
+    display: inline-block;
+    margin-top: 15px;
+    background-color: gold;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}

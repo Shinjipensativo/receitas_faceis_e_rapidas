@@ -1,67 +1,108 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-background-color: #fff3e0;
+/* Importando uma fonte */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;600&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4eee8; 
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); 
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header{
-    background-color: orange;
-    padding: 20px;
+/* Cabeçalho */
+header {
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
 }
 
-.receitas{
+header h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    margin: 0;
+    background-color: #8FB6D8; 
+    color: #243A5E;            
+    padding: 15px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+}
+
+
+
+/* Barra de Busca */
+.search {
+    margin: 20px 0;
+    width: 80%;
+    max-width: 400px;
+}
+
+#busca {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #d1bfa7;
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+/* Container das Cartas */
+.menu {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.card{
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
+/* Estilo Individual dos Cards */
+.card {
+    width: 250px;
+    height: 350px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-.img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+.card:hover {
+    transform: translateY(-10px);
 }
 
-a{
-    display: inline-block;
-    margin-top: 15px;
-    background-color: gold;
-    color: black;
-    padding: 12px 25px;
-    border-radius: 20px;
+.card a {
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 20px;
 }
-footer {
-  border-top: 3px solid #ffffff55;
 
+/* Cores específicas baseadas na imagem */
+.card:nth-child(1) { 
+    background-color: #e6d5bc; 
 }
-#busca {
-  width: 100%;
-  max-width: 400px;
-  padding: 12px 15px;
-  border: none;
-  border-radius: 25px;
-  outline: none;
-  font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+.card:nth-child(1) a { color: #5d3a28; }
+
+.card:nth-child(2) { 
+    background-color: #b35b34; 
 }
-#busca {
-  display: block;
-  margin: 20px auto;
+
+.card:nth-child(3) { 
+    background-color: #f0bc5e; 
 }
-.search{
-  text-align: center;
-}
-#busca {
-  background-color: #ffffff;
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
