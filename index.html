@@ -1,16 +1,17 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor de Casa</title>
-    <link rel="stylesheet" href="estilo.css">
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="img/favicon.png" type="image/png">
+   <link rel="stylesheet" href="estilo.css">
+   <title>Sabor de Casa</title>
 </head>
-
 <body>
     <header>
         <h1>Sabor de Casa</h1>
     </header>
+    <h2>Receitas práticas e deliciosas para o dia a dia</h2>
     <section class="menu">
         <div class="card">
             <a href="receitas f.html">Receitas Fáceis</a>
@@ -22,6 +23,15 @@
             <a href="receitas_d.html">Receitas Dificeis</a>
         </div>
     </section>
+
+    <div class="feedback">
+  <button onclick="avaliar(true)">👍 Gostei</button>
+  <button onclick="avaliar(false)">👎 Não gostei</button>
+</div>
+
+<div id="mensagem"></div>
+
+<script src="scripy.js"></script>
     <footer>
         <p>🍳 Receitas Fácil</p>
         <p>&copy; 2026 - Todos os direitos reservados</p>

@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -7,11 +8,11 @@
     <title>Receitas Medias</title>
 </head>
 
-<header>
-    <h1>Receitas Medias</h1>
-</header>
-
 <body>
+
+    <header>
+        <h1>Receitas Medias</h1>
+    </header>
     <div class="search">
         <input type="text" id="busca" placeholder="Buscar receita...">
     </div>
@@ -24,21 +25,27 @@
             <p>Que Derrete na Boca
                 O truque é usar a batata Asterix (aquela da casca rosada), que tem menos água.</p>
             <a href="nhoque.html">Ver Receita</a>
-            </div>
-            <div class="card">
+        </div>
+        <div class="card">
             <img src="img/frango.jpeg" class="img">
             <h2>Frango com Quiabo Sem Baba</h2>
             <p>Comida mineira que exige o tempo certo de refogado.</p>
             <a href="frango.html">Ver Receita</a>
-            </div>
+        </div>
 
-            <div class="card">
-                <img src="img/bolo.jpeg" class="img">
-                <h2>Bolo de Fubá com Goiabada</h2>
-                <p>Aquele bolo fofinho que já sai com o recheio derretido.</p>
-                <a href="bolo.html">Ver Receita</a>
-            </div>
+        <div class="card">
+            <img src="img/bolo.jpeg" class="img">
+            <h2>Bolo de Fubá com Goiabada</h2>
+            <p>Aquele bolo fofinho que já sai com o recheio derretido.</p>
+            <a href="bolo.html">Ver Receita</a>
+        </div>
     </section>
+    <div class="feedback">
+        <button onclick="avaliar(true)">👍 Gostei</button>
+        <button onclick="avaliar(false)">👎 Não gostei</button>
+    </div>
+
+    <div id="mensagem"></div>
     <footer>
         <p>🍳 Receitas Fácil</p>
         <p>&copy; 2026 - Todos os direitos reservados</p>

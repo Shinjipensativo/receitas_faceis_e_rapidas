@@ -12,3 +12,21 @@ busca.addEventListener("input", function() {
     }
   });
 });
+
+function avaliar(gostou) {
+  const msg = document.getElementById("mensagem");
+
+  if (gostou) {
+    msg.textContent = "Que bom que você gostou! 😄🍝";
+    msg.style.color = "green";
+  } else {
+    msg.textContent = "Poxa 😢 vamos melhorar essa receita!";
+    msg.style.color = "red";
+  }
+
+  msg.style.display = "block";
+
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 5000);
+}

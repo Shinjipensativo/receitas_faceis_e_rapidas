@@ -72,3 +72,30 @@ a{
         max-width: 400px;
     }
 }
+.feedback {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.feedback button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: gold;
+  transition: 0.3s;
+}
+
+.feedback button:hover {
+  background-color: orange;
+  color: white;
+}
+
+#mensagem {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}
